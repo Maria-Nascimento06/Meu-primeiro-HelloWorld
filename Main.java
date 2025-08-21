@@ -1,20 +1,43 @@
-import java.util.Scanner;
-
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
-    private final static String WELCOME_MESSAGE = "Olá, informe o seu nome";
-
     public static void main(String[] args) {
-       var scanner = new Scanner(System.in);
+        System.out.println("Lista de alunos e nota em matemática");
 
-        System.out.println(WELCOME_MESSAGE);
-       var name = scanner.next();
+        Matematica minhaMateria = new Matematica();
 
-        System.out.println("informe sua idade");
-        var age = scanner.nextInt();
+        minhaMateria.getNome();
+        minhaMateria.getNota();
+        minhaMateria.setNome("Fernanda");
+        minhaMateria.setNota(7.4);
 
-        System.out.printf("Olá %s sua idade é %s \n", name, age);
+
+        minhaMateria.getNome2();
+        minhaMateria.getNota2();
+        minhaMateria.setNome2("Luis");
+        minhaMateria.setNota2(3.2);
+
+
+        minhaMateria.getNome3();
+        minhaMateria.getNota3();
+        minhaMateria.setNome3("Alex") ;
+        minhaMateria.setNota3(8.6);
+
+
+        minhaMateria.getNome4();
+        minhaMateria.getNota4();
+        minhaMateria.setNome4("Gabriella");
+        minhaMateria.setNota4(1.1);
+
+
+        minhaMateria.getNome5();
+        minhaMateria.getNota5();
+        minhaMateria.setNome5("Ana");
+        minhaMateria.setNota5(10.0);
+
+
+        minhaMateria.exibeFichaTecnica();
+
 
         }
     }
